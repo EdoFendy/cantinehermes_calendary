@@ -1,0 +1,84 @@
+{
+  "title": "Scegli il mondo visivo di Cantine Hermes",
+  "question": "Il sorteggio ha assegnato \"Linee\". Tienila, scegli un'alternativa o rilancia.",
+  "options": [
+    {
+      "id": "assigned", "kind": "assigned", "label": "Linee", "kicker": "THE ROLL",
+      "lineage": "segnaletica della metropolitana milanese anni '60",
+      "thesis": "Ogni gruppo è una linea colorata, ogni collega una fermata: chi c'è e chi no si legge a colpo d'occhio.",
+      "palette": ["#5A1A2B", "#FAF8F4", "#D7263D", "#1F7A4D", "#F2B705", "#2456A6"],
+      "materials": ["campi di colore piatti", "pastiglie di linea", "grotesk unico"],
+      "viewport": "Barra laterale bordeaux con le 4 sezioni, settimana al centro, fascia \"Oggi in sede\" con un pallino di stato per collega.",
+      "risk": "Con troppi colori di gruppo la pagina diventa un arcobaleno: i colori restano solo sui gruppi.",
+      "raised": [{"from": "Boarding pass & gate board", "raise": "Un cambio di stato (es. Marco passa a fuori sede) resta evidenziato finché non lo vedi."}],
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "rail bordeaux", "x": 0, "y": 0, "w": 2, "h": 10, "accent": true},
+        {"label": "Oggi in sede (pallini)", "x": 2, "y": 0, "w": 10, "h": 2},
+        {"label": "settimana", "x": 2, "y": 2, "w": 7, "h": 8},
+        {"label": "gruppi / prossimi", "x": 9, "y": 2, "w": 3, "h": 8}]}
+    },
+    {
+      "id": "model-pick", "kind": "pick", "label": "Libro di Cantina", "kicker": "IMPECCABLE’S PICK",
+      "lineage": "registri e etichette di cantina",
+      "thesis": "Il registro di cantina: ordine, carta calda, inchiostro bordeaux.",
+      "palette": ["#7A1F32", "#F4EDE0", "#2B2622", "#B08D57"],
+      "materials": ["carta avorio", "filetti sottili", "serif da etichetta"],
+      "viewport": "Calendario su carta avorio, titoli serif, sezioni come capitoli.",
+      "risk": "È la direzione dove atterra quasi ogni sito di cantina: bella ma prevedibile e poco \"da strumento\".",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "top bar", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true},
+        {"label": "calendario", "x": 0, "y": 1, "w": 9, "h": 9},
+        {"label": "note laterali", "x": 9, "y": 1, "w": 3, "h": 9}]}
+    },
+    {
+      "id": "challenger-boarding", "kind": "challenger", "catalogId": "vernacular-ephemera-boarding-pass-and-gate-board",
+      "label": "Gate Board", "verdict": "competitive",
+      "lineage": "tabellone partenze + carta d'imbarco",
+      "thesis": "Colleghi come righe di un tabellone ordinato per stato; il cambio resta acceso.",
+      "palette": ["#111111", "#F5F5F2", "#FF6A00"],
+      "materials": ["pannelli neutri", "cifre tabulari"],
+      "viewport": "Rubrica e presenze come tabellone a colonne fisse.",
+      "case": "Forte sulla chiarezza di stato, ma meno vicina al calendario che è il cuore del prodotto.",
+      "risk": "Rischia il tono freddo da aeroporto per un'azienda del vino.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-boarding-pass-and-gate-board-hero.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "top bar", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true},
+        {"label": "tabellone colleghi", "x": 0, "y": 1, "w": 12, "h": 4},
+        {"label": "calendario", "x": 0, "y": 5, "w": 12, "h": 5}]}
+    },
+    {
+      "id": "challenger-zoo", "kind": "challenger", "catalogId": "aww2-zoo-gardens-guide-map",
+      "label": "Mappa a lobi", "verdict": "declined",
+      "lineage": "mappa guida di un giardino zoologico",
+      "palette": ["#8ED462", "#F5F1E4", "#F5E211", "#FF705D"],
+      "materials": ["colore piatto"],
+      "case": "Troppo giocosa e organica per un calendario di lavoro.",
+      "kept": "Il coraggio del colore piatto a pieno campo.",
+      "hero": "https://impeccable.style/worlds/cards/aww2-zoo-gardens-guide-map-hero.webp"
+    },
+    {
+      "id": "challenger-splitflap", "kind": "challenger", "catalogId": "signals-instruments-split-flap-concourse",
+      "label": "Tabellone a palette", "verdict": "declined",
+      "lineage": "tabellone ferroviario a palette",
+      "palette": ["#111111", "#FFFFFF", "#F2A900"],
+      "materials": ["palette meccaniche"],
+      "case": "Rumoroso e costume di uno strumento, ostacola la lettura quotidiana.",
+      "kept": "Colonne fisse che non si muovono mai.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "canon": true,
+  "canonCard": {
+    "label": "Lo standard della categoria",
+    "thesis": "Un calendario pulito stile Google/Notion, eseguito alla perfezione.",
+    "palette": ["#FFFFFF", "#1F2937", "#2563EB"],
+    "materials": ["griglia pulita"],
+    "viewport": "Sidebar chiara, griglia settimanale, colore blu unico.",
+    "risk": "Indistinguibile dai concorrenti, per costruzione.",
+    "wireframe": {"cols": 12, "rows": 10, "regions": [
+      {"label": "sidebar", "x": 0, "y": 0, "w": 2, "h": 10},
+      {"label": "griglia settimana", "x": 2, "y": 0, "w": 10, "h": 10}]}
+  },
+  "steer": true
+}
